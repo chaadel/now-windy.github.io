@@ -1,0 +1,107 @@
+
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+@font-face  {
+	font-family: 'NanumMyeongjo';
+	src: url('font/NanumMyeongjo.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+
+html, body {
+}
+
+h1, h1 span {
+	font-family: 'NanumMyeongjo', 'Sans-serif';
+}
+
+h3 {
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+h3 span {
+	font-weight: 400;
+}
+
+
+/************/
+
+
+.main {
+	background-color: rgb(234, 246, 255);
+	height: 100vh;
+}
+
+.title {
+	padding: 20% 15%;
+}
+
+.title img {
+	display: inline-block;
+	width: 44px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.title h1 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.middle {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.title_img img {
+	vertical-align: middle;
+	max-height: 600px;
+	padding-top: 15%;
+	margin: 0 auto;
+}
+
+.footer {
+	padding: 40px 100px 20px;
+}
+
+.footer p {
+	font-size: 12px;
+}
+
+
+@media (max-width: 720px) {
+
+h3 {
+	font-size: 18px;
+}
+
+.main {
+	height: auto;
+}
+
+.title {
+	padding: 20% 15%;
+}
+
+.title_img {
+	padding: 0 15%;
+}
+
+.title_img img {
+	max-height: 500px;
+	float: none;
+}
+
+.footer {
+	padding: 15%;
+}
+
+}
+
+
+

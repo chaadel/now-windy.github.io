@@ -1,1 +1,1 @@
-# now-windy.github.io
+# nowwindy.github.io
