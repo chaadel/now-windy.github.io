@@ -1,107 +1,223 @@
-
 @import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-
-@font-face  {
-	font-family: 'NanumMyeongjo';
-	src: url('font/NanumMyeongjo.ttf') format('truetype');
+@font-face {
+  font-family: 'NanumMyeongjo';
+  src: url('font/NanumMyeongjo.ttf') format('truetype');
 }
 
 * {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
 
-html, body {
+html, body {}
+
+h1 {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #363a3c;
 }
 
-h1, h1 span {
-	font-family: 'NanumMyeongjo', 'Sans-serif';
+#landing__main-title span{
+  font-weight: 800;
+}
+
+h2 {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #363a3c;
 }
 
 h3 {
-	font-weight: 100;
-	font-size: 24px;
-	line-height: 1.5;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #363a3c;
 }
 
-h3 span {
-	font-weight: 400;
+h2 span {
+  font-weight: 800;
 }
 
+h {
+  color: #363a3c;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+h span {
+  font-weight: 500;
+}
 
 /************/
 
-
-.main {
-	background-color: rgb(234, 246, 255);
-	height: 100vh;
+#landing {
+  margin: 0;
+}
+.header{
+  margin: 0;
+  background-color: #eaf6ff;
 }
 
-.title {
-	padding: 20% 15%;
+.header-items{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.title img {
-	display: inline-block;
-	width: 44px;
-	height: auto;
-	margin-right: 20px;
+.header__logoImg{
+  height: 24px;
+  padding-left: 40px;
 }
 
-.title h1 {
-	display: inline-block;
-	vertical-align: middle;
+.brand-name{
+  font-family: 'NanumMyeongjo', 'Sans-serif';
+  font-weight: 500;
+  padding-left: 10px;
+
+}
+.landing__contents{
+  margin: 0;
+  padding: 0;
+}
+.landing__content{
+  padding: 0;
+  margin: 0;
+}
+.landing__box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 72px 100px;
 }
 
-.middle {
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
+.landing__column {
 }
 
-.title_img img {
-	vertical-align: middle;
-	max-height: 600px;
-	padding-top: 15%;
-	margin: 0 auto;
+.landing__content:first-child {
+  background-color: #eaf6ff;
+  height: 600px;
+}
+
+.landing__content:nth-child(3) {
+  background-color: rgba(0,0,0,0.03);
+  height: 600px;
+}
+
+#landing__main-title{
+  margin-bottom: 24px;
+}
+
+.landing__column:first-child button{
+  width: 148px;
+  height: 54px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  color: #a7a7a7;
+  margin-top: 40px;
+}
+
+.landing__title{
+  margin-right: 120px;
+  min-width: 250px;
+}
+
+.landing__logoImg{
+  height: 240px;
+}
+
+.landing__mockupImg{
+  vertical-align: middle;
+  max-height: 500px;
+  padding-top: 15%;
+  margin: 0 auto;
+}
+
+.landing__subtitle{
+  margin-right: 80px;
+  margin-left: 80px;
+  min-width: 250px;
+}
+
+.landing__subtitle h2{
+  margin-bottom: 24px;
+}
+
+.landing__list{
+  margin-top: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1FA5FF;
 }
 
 .footer {
-	padding: 40px 100px 20px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.03);
 }
 
-.footer p {
-	font-size: 12px;
+.footer p{
+  font-size: 12px;
+  color: rgba(0,0,0,0.6);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  h1{
+    font-size: 2rem;
+  }
+  h3 {
+  	font-size: 1rem;
+  }
 
-@media (max-width: 720px) {
+  .header__items{
+    justify-content: center;
+  }
 
-h3 {
-	font-size: 18px;
+  .header__logoImg{
+    padding: 0;
+  }
+
+  #landing {
+  	height: auto;
+  }
+
+  .landing__logoImg{
+    display: none;
+  }
+
+  .landing__box{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .landing__logoImg{
+    height: 100px;
+  }
+
+  .landing__mockupImg{
+    vertical-align: middle;
+    max-height: 310px;
+    padding-top: 15%;
+
+  }
+  .title {
+  	padding: 20% 15%;
+  }
+
+  .title_img {
+  	padding: 0 15%;
+  }
+
+  .title_img img {
+  	max-height: 500px;
+  	float: none;
+  }
+
+  .footer {
+  	padding: 15%;
+  }
 }
-
-.main {
-	height: auto;
-}
-
-.title {
-	padding: 20% 15%;
-}
-
-.title_img {
-	padding: 0 15%;
-}
-
-.title_img img {
-	max-height: 500px;
-	float: none;
-}
-
-.footer {
-	padding: 15%;
-}
-
-}
-
-
-
